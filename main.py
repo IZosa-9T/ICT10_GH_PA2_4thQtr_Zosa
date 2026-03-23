@@ -51,10 +51,11 @@ class User(Dog):
     pass
 
 def userdoginfo(e):
+    document.getElementById('output4').innerHTML = ''
     Username = document.getElementById('input1').value
     Userdogname = document.getElementById('input2').value
     Userdogage = document.getElementById('input3').value
     Userdogbreed = document.getElementById('input4').value
 
     dog1 = User(Userdogbreed, Userdogage, Userdogname, Username)
-    display(f'{dog1.name} is an {dog1.breed}. It is {dog1.age} years old and owned by {dog1.owner}.', target='output3')
+    display(f'{dog1.name} is an {dog1.breed}. It is {dog1.age} years old and owned by {dog1.owner}.', target='output4')
